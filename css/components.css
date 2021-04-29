@@ -1,0 +1,25 @@
+.profile-buttons{
+    padding: 32px 0px;
+}
+
+.button-sign-in{
+    text-decoration: none;
+}
+
+.button-register{
+    text-decoration: none;
+}
+
+.button-nav-option{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.nav-search-icon{
+    padding: 32px 20px;
+}
+
+.nav-shopping-cart-icon{
+    padding: 32px 20px;
+}

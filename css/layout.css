@@ -1,0 +1,20 @@
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-buttons{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-logo{
+    display:flex;
+    flex-direction: column;
+    
+}
+
