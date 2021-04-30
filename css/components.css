@@ -1,25 +1,83 @@
-.profile-buttons{
-    padding: 32px 0px;
+.nav-bar {
+    background-color: var(--color-header);
+    box-shadow      : 0px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.button-sign-in{
+.logo {
+    font-family    : var(--font-logo);
+    font-size      : var(--text-lg);
+    color          : var(--color-logo);
     text-decoration: none;
 }
 
-.button-register{
+
+.button-md {
     text-decoration: none;
+    padding        : var(--space-xs) var(--space-md-lg);
+    border-radius  : 15px;
+    font-family    : var(--font-secondary);
+    box-shadow     : 0px 0px 20px rgba(0, 0, 0, 0.2)
 }
 
-.button-nav-option{
+/**------Sign In & Register Buttons in Navigation Bar-------*/
+.button-sign-in {
+    background-color: var(--color-button-primary);
+    color           : var(--color-button-primary-text);
+    border          : 0.07rem solid var(--color-button-primary-border);
+    transition      : all 0.2s ease;
+}
+
+.button-md.button-sign-in:hover {
+    background-color: var(--color-button-primary-hovered);
+    border          : 0.07rem solid var(--color-button-secondary-border);
+    transition      : all 0.2s ease;
+}
+
+.button-register {
+    background-color: var(--color-button-secondary);
+    color           : var(--color-button-secondary-text);
+    border          : 0.07rem solid var(--color-button-secondary-border);
+    transition      : all 0.2s ease;
+}
+
+.button-md.button-register:hover {
+    background-color: var(--color-button-secondary-hovered);
+    color           : var(--color-button-primary-text);
+    transition      : all 0.2s ease;
+}
+/**------------------------------------------------------------*/
+
+
+/** Navigation Links in Navigation Bar */
+.button-nav-option {
     text-decoration: none;
-    display: block;
-    padding: 10px;
+    display        : block;
+    padding        : 1rem;
+    font-family    : var(--font-secondary);
+    font-size      : var(--text-reg);
+    color          : var(--color-text-heading);
+    font-weight    : 700;
+    transition: all 0.2s ease;
 }
 
-.nav-search-icon{
-    padding: 32px 20px;
+
+.button-nav-option:hover {
+    box-shadow     : 0px 0px 20px var(--color-card-shadow);
+    border-radius: 15px;
+    transition: all 0.1s ease;
+    
+    
+}
+/**------------------------------------------------------------*/
+
+
+/**-------------------Icons in Navigation Bar------------------*/
+.nav-search-icon {
+    padding-left : 1rem;
+    padding-right: 1rem;
 }
 
-.nav-shopping-cart-icon{
-    padding: 32px 20px;
+.nav-shopping-cart-icon {
+    padding-left: 1rem;
 }
+/**------------------------------------------------------------*/

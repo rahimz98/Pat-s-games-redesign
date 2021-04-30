@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/navbar.js"></script>
     <title>Document</title>
 </head>
 
@@ -14,7 +15,7 @@
     <header>
         <div class="nav-bar">
             <div class="nav-logo">
-                <a>Pat's Games</a>
+                <a class="logo" href="#">Pat's Games</a>
             </div>
             <div class="nav-buttons">
                 <a class="button-nav-option" href="#">New Additions</a>
@@ -23,12 +24,18 @@
                 <a class="button-nav-option" href="#">Events</a>
                 <a class="button-nav-option" href="#">Gallery</a>
             </div>
-            <object class="nav-search-icon" data="./images/search_black_24dp.svg" width="24px"></object>
+
+            <form>
+                <input id="searchBox" type="text" name="Search Box" style="display:none" />
+            </form>
+            <a onclick="openSearchBar()"><object class="nav-search-icon" data="./images/search_black_24dp.svg"
+                    width="32px"></object></a>
+
             <div class="profile-buttons">
-                <a class="button-sign-in" href="#">Sign In</a>
-                <a class="button-register" href="#">Register</a>
+                <a class="button-md button-sign-in" href="#" onclick="openSearchBar()" >Sign In</a>
+                <a class="button-md button-register" href="#">Register</a>
             </div>
-            <object class="nav-shopping-cart-icon" data="./images/shopping_cart_black_24dp.svg" width="24px"></object>
+            <object class="nav-shopping-cart-icon" data="./images/shopping_cart_black_24dp.svg" width="32px"></object>
         </div>
     </header>
 

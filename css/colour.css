@@ -1,0 +1,39 @@
+:root {
+    /* Typography */
+    --color-text            : #030d15;
+    --color-text-heading    : #254966;
+    --color-text-big-heading: #ffffff;
+    --color-text-subtle     : #030d15;
+
+    --color-logo: #227E69;
+
+    /* Buttons */
+    --color-button-primary        : #53a3e6;
+    --color-button-primary-hovered: #99cdf7;
+    --color-button-primary-text: #ffffff;
+    --color-button-primary-border: #53a3e6;
+
+    --color-button-secondary       : #ffffff;
+    --color-button-secondary-hovered: #99cdf7;
+    --color-button-secondary-border: #53a3e6;
+    --color-button-secondary-text: #53a3e6;
+
+    /* Banner */
+    --color-banner-primary  : #99cdf7;
+    --color-banner-secondary: #00e7b1;
+
+    /* Cards */
+    --color-card        : #ffffff;
+    --color-card-shadow : rgba(153, 205, 247, 0.5);
+    --color-card-heading: #254966;
+
+    /* Background */
+    --color-body  : #f9f9f9;
+    --color-header: #ffffff;
+
+    /* User Feedback */
+    --color-success: #04CF25;
+    --color-failure: #D71C1C;
+
+
+}

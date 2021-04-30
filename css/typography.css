@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+@font-face {
+    font-family: 'Sylfaen';
+    src        : url(./../fonts/Sylfaen\ Regular.ttf);
+}
+
+:root {
+    --font-logo     : 'Peralta', cursive;
+    --font-primary  : 'Sylfaen';
+    --font-secondary: 'Source Sans Pro', sans-serif;
+
+    /* Base values */
+    --text-base-size: 1rem;
+
+    /* Type scale */
+    --text-scale-ratio: 1.5;
+    --text-xs         : calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm         : calc(1em / var(--text-scale-ratio));
+    --text-reg        : calc(1em);
+    --text-md         : calc(1em * var(--text-scale-ratio));
+    --text-lg         : calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl         : calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl        : calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxxl       : calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+    --baseline: 20px;
+
+    --space-xxxs: 0.25em;
+    --space-xxs : 0.375em;
+    --space-xs  : 0.5em;
+    --space-sm  : 0.75em;
+    --space-md  : 1.25em;
+    --space-md-lg: 1.5rem;
+    --space-lg  : 2em;
+    --space-xl  : 3.25em;
+    --space-xxl : 5.25em;
+    --space-xxxl: 8.5em;
+
+}
