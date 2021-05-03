@@ -80,4 +80,21 @@
 .nav-shopping-cart-icon {
     padding-left: 1rem;
 }
+
+rect.search-icon {
+    stroke:#fff;
+    fill:#fff;
+    fill-opacity:0;
+    stroke-opacity:0;
+}
+
+.search-box-not-opened{
+    display: none;
+}
+
+.search-box{
+    transition: all 4s ease;
+    display: block;
+    
+}
 /**------------------------------------------------------------*/
