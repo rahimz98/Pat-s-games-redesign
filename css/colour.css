@@ -10,13 +10,13 @@
     /* Buttons */
     --color-button-primary        : #53a3e6;
     --color-button-primary-hovered: #99cdf7;
-    --color-button-primary-text: #ffffff;
-    --color-button-primary-border: #53a3e6;
+    --color-button-primary-text   : #ffffff;
+    --color-button-primary-border : #53a3e6;
 
-    --color-button-secondary       : #ffffff;
+    --color-button-secondary        : #ffffff;
     --color-button-secondary-hovered: #99cdf7;
-    --color-button-secondary-border: #53a3e6;
-    --color-button-secondary-text: #53a3e6;
+    --color-button-secondary-border : #53a3e6;
+    --color-button-secondary-text   : #53a3e6;
 
     /* Banner */
     --color-banner-primary  : #99cdf7;
@@ -24,6 +24,7 @@
 
     /* Cards */
     --color-card        : #ffffff;
+    --color-card-shadow : rgba(153, 205, 247, 0.3);
     --color-card-shadow : rgba(153, 205, 247, 0.5);
     --color-card-heading: #254966;
 

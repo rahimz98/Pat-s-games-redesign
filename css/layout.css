@@ -1,9 +1,21 @@
+.home {
+    display            : grid;
+    grid-template-areas: 
+        "banner"
+        "store-info"
+        "store-news"
+        "events"
+        "deck"
+        "footer";
+    grid-template-rows   : 50vh auto auto auto auto auto;
+    grid-template-columns: 100%;
+}
 
 .nav-bar {
     display       : flex;
     flex-direction: row;
     align-items   : center;
-    padding: 0.5rem 1rem
+    padding       : 0.5rem 1rem
 }
 
 .nav-buttons {
@@ -13,4 +25,75 @@
     flex-grow      : 1;
     justify-content: space-evenly;
     align-items    : center;
+}
+
+/**------------------- Banner ------------------*/
+.banner {
+    grid-area : banner;
+    min-height: 50vh;
+}
+
+.banner-contents {
+    display        : flex;
+    flex-direction : row;
+    min-height     : 50vh;
+    align-items    : center;
+    justify-content: space-between;
+    padding-left   : 7rem;
+    padding-right  : 7rem;
+}
+
+.banner-text>* {
+    text-align: center;
+}
+
+.banner-text>.description {
+    max-width: 22ch;
+}
+
+.banner-img {
+    margin-left : auto;
+    margin-right: auto;
+}
+
+/**---------------------------------------------*/
+
+
+/**------------------- Store Info ------------------*/
+.store-info {
+    grid-area      : store-info;
+    margin-left    : 7rem;
+    margin-right   : 7rem;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-between;
+    margin-top     : var(--space-xl);
+}
+
+.info-card>.hours {
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+}
+
+/**---------------------------------------------*/
+
+
+.store-news {
+    grid-area   : store-news;
+    margin-left : 7rem;
+    margin-right: 7rem;
+}
+
+.store-events {
+    grid-area: events;
+}
+
+.deck-expansion {
+    grid-area: deck;
+}
+
+.footer {
+    grid-area: footer;
 }

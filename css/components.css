@@ -1,6 +1,12 @@
+body {
+    background-color: var(--color-body);
+}
+
 .nav-bar {
     background-color: var(--color-header);
     box-shadow      : 0px 4px 6px rgba(0, 0, 0, 0.16);
+    z-index         : 5;
+    position        : relative;
 }
 
 .logo {
@@ -31,6 +37,7 @@
     background-color: var(--color-button-primary-hovered);
     border          : 0.07rem solid var(--color-button-secondary-border);
     transition      : all 0.2s ease;
+    box-shadow      : 0px 0px 5px rgba(0, 0, 0, 0.2)
 }
 
 .button-register {
@@ -44,7 +51,9 @@
     background-color: var(--color-button-secondary-hovered);
     color           : var(--color-button-primary-text);
     transition      : all 0.2s ease;
+    box-shadow      : 0px 0px 5px rgba(0, 0, 0, 0.2)
 }
+
 /**------------------------------------------------------------*/
 
 
@@ -57,44 +66,118 @@
     font-size      : var(--text-reg);
     color          : var(--color-text-heading);
     font-weight    : 700;
-    transition: all 0.2s ease;
+    transition     : all 0.2s ease;
 }
 
 
 .button-nav-option:hover {
-    box-shadow     : 0px 0px 20px var(--color-card-shadow);
+    box-shadow   : 0px 0px 20px var(--color-card-shadow);
     border-radius: 15px;
-    transition: all 0.1s ease;
-    
-    
+    transition   : all 0.2s ease;
 }
+
 /**------------------------------------------------------------*/
 
 
 /**-------------------Icons in Navigation Bar------------------*/
 .nav-search-icon {
-    padding-left : 1rem;
-    padding-right: 1rem;
+    margin-left : 1rem;
+    margin-right: 1rem;
+    padding     : 0.25rem;
+    transition  : all 0.1s ease;
+}
+
+.nav-search-icon:hover {
+    box-shadow   : 0px 0px 20px var(--color-card-shadow);
+    border-radius: 15px;
+    transition   : all 0.1s ease;
 }
 
 .nav-shopping-cart-icon {
-    padding-left: 1rem;
+    margin-left: 1rem;
+    padding    : 0.25rem;
+    transition : all 0.1s ease;
+}
+
+.nav-shopping-cart-icon:hover {
+    box-shadow   : 0px 0px 20px var(--color-card-shadow);
+    border-radius: 15px;
+    transition   : all 0.1s ease;
 }
 
 rect.search-icon {
-    stroke:#fff;
-    fill:#fff;
-    fill-opacity:0;
-    stroke-opacity:0;
+    stroke        : #fff;
+    fill          : #fff;
+    fill-opacity  : 0;
+    stroke-opacity: 0;
 }
 
-.search-box-not-opened{
+/* .search-box-not-opened{
     display: none;
 }
 
 .search-box{
     transition: all 4s ease;
-    display: block;
-    
-}
+    display: block; 
+} */
 /**------------------------------------------------------------*/
+
+
+/**------------------- Banner ------------------*/
+.banner {
+    background: linear-gradient(90deg, var(--color-banner-primary), var(--color-banner-secondary));
+}
+
+.banner-text {
+    font-family: var(--font-logo);
+    color      : white
+}
+
+.banner-text>.store-name {
+    font-size: var(--text-xxl);
+}
+
+.banner-text>.welcome {
+    font-family: var(--font-primary);
+    font-size  : var(--text-xxl);
+}
+
+.banner-text>.description {
+    font-family : var(--font-primary);
+    font-size   : var(--text-lg);
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.banner-img>img {
+    width: 20rem;
+}
+
+/**---------------------------------------------*/
+
+
+/**------------------- Store Info ------------------*/
+.info-card {
+    background-color: var(--color-card);
+    font-family     : var(--font-secondary);
+    text-align      : center;
+    padding-top     : var(--space-sm);
+    padding-bottom  : var(--space-sm);
+    width           : 22rem;
+    border-radius   : 15px;
+    box-shadow      : 0px 0px 15px var(--color-card-shadow);
+}
+
+.info-card>.heading {
+    color        : var(--color-card-heading);
+    font-weight  : bold;
+    font-size    : var(--text-md);
+    margin-bottom: var(--space-xxxs);
+}
+
+.info-card-disc {
+    color    : var(--color-text);
+    font-size: var(--text-reg);
+}
+
+/**---------------------------------------------*/
