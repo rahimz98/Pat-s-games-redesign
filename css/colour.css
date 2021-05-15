@@ -25,7 +25,7 @@
     /* Cards */
     --color-card        : #ffffff;
     --color-card-shadow : rgba(153, 205, 247, 0.3);
-    --color-card-shadow : rgba(153, 205, 247, 0.5);
+    --color-card-shadow-hover : rgba(153, 205, 247, 0.5);
     --color-card-heading: #254966;
 
     /* Background */
@@ -36,5 +36,7 @@
     --color-success: #04CF25;
     --color-failure: #D71C1C;
 
+    /* Footer */
+    --color-footer: #254966;
 
 }

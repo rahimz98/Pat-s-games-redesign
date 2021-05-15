@@ -1,13 +1,13 @@
 .home {
-    display            : grid;
-    grid-template-areas: 
+    display: grid;
+    grid-template-areas:
         "banner"
         "store-info"
         "store-news"
         "events"
         "deck"
         "footer";
-    grid-template-rows   : 50vh auto auto auto auto auto;
+    grid-template-rows   : auto auto auto auto auto auto;
     grid-template-columns: 100%;
 }
 
@@ -30,7 +30,7 @@
 /**------------------- Banner ------------------*/
 .banner {
     grid-area : banner;
-    min-height: 50vh;
+    padding-top: 2rem;
 }
 
 .banner-contents {
@@ -38,9 +38,10 @@
     flex-direction : row;
     min-height     : 50vh;
     align-items    : center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-left   : 7rem;
     padding-right  : 7rem;
+    flex-wrap: wrap;
 }
 
 .banner-text>* {
@@ -52,8 +53,8 @@
 }
 
 .banner-img {
-    margin-left : auto;
-    margin-right: auto;
+    /* margin-left : auto;
+    margin-right: auto; */
 }
 
 /**---------------------------------------------*/
@@ -79,21 +80,65 @@
 
 /**---------------------------------------------*/
 
-
+/**------------------- Store News ------------------*/
 .store-news {
-    grid-area   : store-news;
-    margin-left : 7rem;
-    margin-right: 7rem;
+    grid-area      : store-news;
+    margin-left    : 7rem;
+    margin-right   : 7rem;
+    margin-top     : var(--space-xl);
+    margin-bottom  : var(--space-xl);
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : wrap;
+    justify-content: space-evenly;
 }
 
+/**---------------------------------------------*/
+
+
+/**------------------- Store News ------------------*/
 .store-events {
     grid-area: events;
 }
 
+.event-card-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    justify-content: space-evenly;
+    margin-bottom: var(--space-xl);
+}
+
+/**---------------------------------------------*/
+
+
+/**------------------- Deck Expansion ------------------*/
 .deck-expansion {
     grid-area: deck;
 }
 
+.product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+
+/**---------------------------------------------*/
+
+
 .footer {
     grid-area: footer;
+    margin-top: var(--space-xl);
+    min-height: 40vh;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 7rem;
+    margin-right: 7rem;
 }
