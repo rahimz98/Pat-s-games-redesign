@@ -39,4 +39,12 @@
     /* Footer */
     --color-footer: #254966;
 
+    /* Text Fields */
+    --color-field: #254966;
+
+    /* Tags */
+    --color-tag-text : #ffffff;
+    --color-tag: #254966;
+
+
 }

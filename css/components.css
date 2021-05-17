@@ -197,6 +197,7 @@ rect.search-icon {
     font-weight  : bold;
     font-size    : var(--text-md);
     margin-bottom: var(--space-xxxs);
+    font-family  : var(--font-secondary);
 
 }
 
@@ -374,3 +375,49 @@ td {
 }
 
 /**-------------------------------------------------*/
+
+/**----------------------------------------------PRODUCT - LISTING--------------------------------------------------*/
+
+.page-heading {
+    color      : var(--color-text-heading);
+    font-family: var(--font-primary);
+    font-size  : var(--text-xl);
+}
+
+.filters-card {
+    background-color: var(--color-card);
+    border-radius   : 15px;
+    height          : 30rem;
+    width           : 15rem;
+}
+
+.filters-container {
+    margin-left: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.mini-heading {
+    color        : var(--color-card-heading);
+    font-size    : var(--text-reg-md);
+    margin-bottom: var(--space-xxxs);
+    font-family  : var(--font-secondary);
+}
+
+.tag-container {
+    border: 1px solid var(--color-tag);
+    border-radius: 15px;
+    margin-right: 1rem;
+}
+
+.tag {
+    color: var(--color-tag-text);
+    background-color: var(--color-tag);
+    padding: var(--space-xxxs) var(--space-xxxs);
+    width: 15ch;
+    border-radius: 15px;
+    margin: var(--space-xxs) var(--space-xxxs);
+}
+
+.tag > * {
+    margin: var(--space-xxs) var(--space-xxxs);
+}

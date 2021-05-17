@@ -1,0 +1,20 @@
+.product-listing {
+    margin-top: 4rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+
+.page-heading {
+    text-align: center;
+    padding   : 3rem;
+}
+
+.product-listing-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+}
