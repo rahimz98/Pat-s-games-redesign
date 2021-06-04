@@ -18,3 +18,31 @@
     display: flex;
     align-items: center;
 }
+
+.products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: var(--space-md);
+    justify-content: space-between;
+}
+
+.products > .product-card {
+    margin-bottom: var(--space-sm);
+}
+
+.page-counter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-lg);
+
+}
+
+.page-counter-container > .counter {
+    margin-left: var(--space-sm);
+    margin-right: var(--space-sm);
+}
+

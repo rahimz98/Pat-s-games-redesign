@@ -23,10 +23,10 @@
     --color-banner-secondary: #00e7b1;
 
     /* Cards */
-    --color-card        : #ffffff;
-    --color-card-shadow : rgba(153, 205, 247, 0.3);
-    --color-card-shadow-hover : rgba(153, 205, 247, 0.5);
-    --color-card-heading: #254966;
+    --color-card             : #ffffff;
+    --color-card-shadow      : rgba(153, 205, 247, 0.3);
+    --color-card-shadow-hover: rgba(153, 205, 247, 0.5);
+    --color-card-heading     : #254966;
 
     /* Background */
     --color-body  : #f9f9f9;
@@ -43,8 +43,11 @@
     --color-field: #254966;
 
     /* Tags */
-    --color-tag-text : #ffffff;
-    --color-tag: #254966;
+    --color-tag-text: #ffffff;
+    --color-tag     : #254966;
+
+    /* Text Field */
+    --color-text-box: #254966;
 
 
 }
