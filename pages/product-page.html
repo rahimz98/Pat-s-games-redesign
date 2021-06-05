@@ -1,15 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/navbar.js"></script>
+    <link rel="stylesheet" href="./../css/reset.css" />
+    <link rel="stylesheet" href="./../css/styles.css" />
+    <script src="./../js/navbar.js"></script>
     <title>Pat's Games</title>
 </head>
+
 <body>
-    
+
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a class="logo" href="/">Pat's Games</a>
+            </div>
+            <div class="nav-buttons">
+                <a class="button-nav-option" href="#">New Additions</a>
+                <a class="button-nav-option" href="#">All Items</a>
+                <a class="button-nav-option" href="#">Booster Packs</a>
+                <a class="button-nav-option" href="#">Events</a>
+                <a class="button-nav-option" href="#">Gallery</a>
+            </div>
+
+            <form>
+                <input class="search-box" id="searchBox" type="text" name="Search Box" style="display:none;" />
+            </form>
+            <a href="#" class="nav-search-icon" cursor="pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#000000">
+                    <g>
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        <rect class="search-icon" x="0" y="0" width="32" height="32" onclick="openSearchBar()" />
+                    </g>
+                </svg>
+            </a>
+
+            <div class="profile-buttons">
+                <a class="button-md button-sign-in" href="#">Sign In</a>
+                <a class="button-md button-register" href="#">Register</a>
+            </div>
+            <object class="nav-shopping-cart-icon" data="./../images/icons/shopping_cart_black_24dp.svg"
+                width="32px"></object>
+        </div>
+    </nav>
+
+    <main class="main">
+
+        <div class="product-contrainer">
+            <div class="outer-container">
+                <div class="container">
+                    <div class="product-image-container">
+                        <img class="product-img" src="./../images/products/comander_legends_booster_pack.png">
+                    </div>
+                    <div class="product-info">
+                        <p class="product-name">Commander Legends 20-Card Draft Booster</p>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                        width="36px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                    </svg>
+                                </td>
+                                <td>10.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <svg class="tick" xmlns="http://www.w3.org/2000/svg" height="36px"
+                                        viewBox="0 0 24 24" width="36px">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                                    </svg>
+                                </td>
+                                <td class="item-in-stock">Item is in Stock</td>
+                            </tr>
+                        </table>
+                        <div class="product-counter">
+                            <svg class="counter-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 13H5v-2h14v2z"/></svg>
+                            <p class="count"> 1 </p>
+                            <svg class="counter-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                        <a class="button-md add-to-cart in-product-disc" href="#">Add To Cart</a>
+                        <p class="product-id">Product ID:000000</p>
+                    </div>
+                </div>
+                <div class="product-disc">
+                    <p class="heading">Product Description</p>
+                    <p class="disc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime eos eius blanditiis, qui
+                        adipisci iste deserunt impedit culpa, repudiandae, ipsam ipsa? Vero dolorum corrupti architecto,
+                        corporis fuga quidem quo nam?</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="deck-expansion">
+            <div class="banner-heading">
+                <div class="banner-text">
+                    <h1 class="events-heading">Expand Your Deck</h1>
+                </div>
+            </div>
+
+            <div class="product-container">
+                <div class="product-card">
+                    <p class="heading">Commander Legends 15-Card Booster Packs</p>
+                    <hr>
+                    <img src="./../images/products/comander_legends_booster_pack_2.png" alt="Booster Pack" />
+                    <table>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px"
+                                    fill="#000000">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                </svg>
+                            </td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg class="tick" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                    width="36px">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                                </svg>
+                            </td>
+                            <td class="item-in-stock">Item is in Stock</td>
+                        </tr>
+                    </table>
+                    <a class="button-md add-to-cart" href="#">Add To Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <p class="heading">Commander Legends 20-Card Booster Packs</p>
+                    <hr>
+                    <img src="./../images/products/comander_legends_booster_pack.png" alt="Booster Pack" />
+                    <table>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px"
+                                    fill="#000000">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                </svg>
+                            </td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg class="tick" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                    width="36px">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                                </svg>
+                            </td>
+                            <td class="item-in-stock">Item is in Stock</td>
+                        </tr>
+                    </table>
+                    <a class="button-md add-to-cart" href="#">Add To Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <p class="heading">Time Spiral 15-Card Booster Pack</p>
+                    <hr>
+                    <img src="./../images/products/time_spiral_booster_pack.png" alt="Booster Pack" />
+                    <table>
+                        <tr>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24" width="36px"
+                                    fill="#000000">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path
+                                        d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                </svg>
+                            </td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <svg class="tick" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                    width="36px">
+                                    <path d="M0 0h24v24H0V0z" fill="none" />
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+                                </svg>
+                            </td>
+                            <td class="item-in-stock">Item is in Stock</td>
+                        </tr>
+                    </table>
+                    <a class="button-md add-to-cart" href="#">Add To Cart</a>
+                </div>
+
+            </div>
+        </div>
+
+        
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="about-us">
+                    <div class="footer-header">
+                        <p>About Us</p>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            The store was started in 1993 with 3 binders of Magic Cards and the love of the game. Today
+                            Pat’s
+                            Games is the leading seller of individual Magic Cards in Austin, Texas. We have 98% of all
+                            Magic
+                            Cards in stock. You can place an order in our online store and the cards will be pulled in
+                            minutes. With Covid19, Pat’s has adjusted to meet all your needs while maintaining the
+                            safety of
+                            our community and staff, so we are now offering Direct Shipping to YOU. Come experience the
+                            excitement, knowledge, and fun of Pat’s Games.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="find-us">
+                    <div class="footer-header">
+                        <p>Find Us</p>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            2308 Hancock Dr,
+                        </p>
+                        <p>
+                            Austin, TX 78756,
+                        </p>
+                        <p>
+                            United States
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-us">
+                    <div class="footer-header">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="footer-img">
+                        <div class="social-card">
+                            <img src="./../images/socials/facebook.png" alt="Facebook logo" />
+                        </div>
+                        <div class="social-card">
+                            <img src="./../images/socials/instagram.png" alt="Instagram logo" />
+                        </div>
+                        <div class="social-card">
+                            <img src="./../images/socials/youtube.png" alt="Youtube logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>

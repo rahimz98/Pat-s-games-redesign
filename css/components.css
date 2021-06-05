@@ -272,7 +272,7 @@ rect.search-icon {
     padding         : var(--space-sm) var(--space-md);
     border-radius   : 15px;
     box-shadow      : 0px 0px 15px var(--color-card-shadow);
-    min-width: 10rem;
+    min-width       : 10rem;
 }
 
 .product-card:hover {
@@ -282,7 +282,7 @@ rect.search-icon {
 
 .product-card>.heading {
     text-align: center;
-    max-width: 17ch;
+    max-width : 17ch;
 }
 
 .product-card>img {
@@ -393,8 +393,8 @@ td {
     background-color: var(--color-card);
     border-radius   : 15px;
     height          : 30rem;
-    min-width: 15rem;
-    max-width: 15rem;
+    min-width       : 15rem;
+    max-width       : 15rem;
     box-shadow      : 0px 0px 15px var(--color-card-shadow);
 }
 
@@ -463,16 +463,16 @@ td {
     display            : block;
     position           : relative;
     margin-bottom      : var(--space-sm);
-    padding-left: 2rem;
+    padding-left       : 2rem;
     cursor             : pointer;
     font-size          : var(--text-reg);
     -webkit-user-select: none;
     -moz-user-select   : none;
     -ms-user-select    : none;
     user-select        : none;
-    font-family: var(--font-secondary);
-    color: var(--color-text);
-    
+    font-family        : var(--font-secondary);
+    color              : var(--color-text);
+
 }
 
 /* Hide the browser's default checkbox */
@@ -491,79 +491,79 @@ td {
     height          : 25px;
     width           : 25px;
     background-color: #eee;
-    border-radius: 5px;
+    border-radius   : 5px;
 }
 
 /* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
+.checkbox-container:hover input~.checkmark {
     background-color: #ccc;
-  }
+}
 
-  /* When the checkbox is checked, add a blue background */
-.checkbox-container input:checked ~ .checkmark {
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked~.checkmark {
     background-color: var(--color-card-heading);
-  }
+}
 
-  /* Create the checkmark/indicator (hidden when not checked) */
+/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-    content: "";
+    content : "";
     position: absolute;
-    display: none;
-  }
+    display : none;
+}
 
-  /* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
+/* Show the checkmark when checked */
+.checkbox-container input:checked~.checkmark:after {
     display: block;
-  }
+}
 
-  /* Style the checkmark/indicator */
+/* Style the checkmark/indicator */
 .checkbox-container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    left             : 9px;
+    top              : 5px;
+    width            : 5px;
+    height           : 10px;
+    border           : solid white;
+    border-width     : 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+    -ms-transform    : rotate(45deg);
+    transform        : rotate(45deg);
+}
 
 /* ------------------------- */
 
 /* Text Box */
 
 .search-box-label {
-    margin-left: 10px ;
-    color : var(--color-card-heading);
-    font-size: 15px;
+    margin-left: 10px;
+    color      : var(--color-card-heading);
+    font-size  : 15px;
 }
 
 .search-box {
-    padding: 12px 20px 12px 40px;
-    border: 1px solid var(--color-text-box);
-    box-sizing: border-box;
-    width: 80%;
-    border-radius: 15px;
-    outline: none;
-    background-image: url('./../images/icons/search_black_24dp.svg');
-    background-repeat: no-repeat;
+    padding            : 12px 20px 12px 40px;
+    border             : 1px solid var(--color-text-box);
+    box-sizing         : border-box;
+    width              : 80%;
+    border-radius      : 15px;
+    outline            : none;
+    background-image   : url('./../images/icons/search_black_24dp.svg');
+    background-repeat  : no-repeat;
     background-position: 10px;
 }
 
-.search-box:focus  {
-    padding: 12px 20px 12px 40px;
-    border: 1px solid var(--color-text-box);
-    width: 80%;
+.search-box:focus {
+    padding      : 12px 20px 12px 40px;
+    border       : 1px solid var(--color-text-box);
+    width        : 80%;
     border-radius: 15px;
 }
 
 .selected {
-    border-radius: 15px;
-    padding: var(--space-md);
+    border-radius   : 15px;
+    padding         : var(--space-md);
     background-color: var(--color-card);
     box-shadow      : 0px 0px 20px var(--color-card-shadow-hover);
-    font-size: var(--text-reg-md);
+    font-size       : var(--text-reg-md);
 }
 
 .next {
@@ -581,16 +581,65 @@ td {
     transition      : all 0.2s ease;
 }
 
+.container {
+    padding-top: var(--space-sm);
+}
 
-/* .card-link {
-   width: 100%;
-   height: 100%;
-   top: 0;
-   left: 0;
-   text-decoration: none;
-   z-index: 10;
-   background-color: white;
-   opacity: 0;
-   filter: alpha(opacity=0);
-} */
+.product-image-container>.product-img {
+    width: 16rem;
+}
 
+.product-contrainer {
+    background-color: var(--color-card);
+    border-radius   : 15px;
+    box-shadow      : 0px 0px 15px var(--color-card-shadow);
+    font-family: var(--font-secondary);
+    margin-bottom: var(--space-xl);
+}
+
+.product-name {
+    font-family: var(--font-primary);
+    font-size: var(--text-md);
+}
+
+.product-info {
+    max-width: 40ch;
+}
+
+.counter-icon {
+    background-color: var(--color-button-primary);
+    fill: var(--color-button-primary-text);
+    border-radius: 50%;
+    padding: var(--space-xs);
+    transition      : all 0.1s ease;
+    box-shadow     : 0px 0px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.counter-icon:hover {
+    background-color: var(--color-button-primary-hovered);
+    box-shadow      : 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition      : all 0.1s ease;
+}
+
+.count {
+    border-radius: 15px;
+    box-shadow     : 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: var(--space-xs) var(--space-md);   
+}
+
+.in-product-disc {
+    margin: var(--space-sm) 0;
+}
+
+.product-id {
+    font-weight: 300;    
+}
+
+.product-disc > .disc {
+    color      : var(--color-text);
+    font-weight: 400;
+    font-size  : var(--text-reg);
+    line-height: 1.6;
+    padding-bottom: var(--space-sm);
+}
