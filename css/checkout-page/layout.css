@@ -2,55 +2,55 @@
     margin-top  : 4rem;
     margin-left : 14rem;
     margin-right: 14rem;
-    display: flex;
+    display     : flex;
 }
 
 .forms-container {
     width: 60%;
-    
+
 }
 
 .checkout-price-container {
-    width: 40%;
-    margin-top: var(--space-lg);
+    width      : 40%;
+    margin-top : var(--space-lg);
     margin-left: var(--space-md);
 }
 
 .stepper {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: var(--space-xl); 
+    width         : 100%;
+    padding-top   : 1rem;
+    padding-bottom: var(--space-xl);
 }
 
 .buttons-container {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    margin-top: var(--space-lg);
-    align-items: center;
+    margin-top     : var(--space-lg);
+    align-items    : center;
 }
 
 .payment-type {
-    display: flex;
+    display        : flex;
     justify-content: space-around;
-    margin-bottom: var(--space-md);
+    margin-bottom  : var(--space-md);
 }
 
 .checkout-product-container {
-    display: flex;
-    margin-left: var(--space-sm);
+    display     : flex;
+    margin-left : var(--space-sm);
     margin-right: var(--space-sm);
-    margin-top: var(--space-sm);
+    margin-top  : var(--space-sm);
 
 }
 
 .checkout-product {
-    display: flex;
+    display    : flex;
     align-items: center;
 }
 
 .checkout-prices {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    margin-left: var(--space-sm);
-    margin-right: var(--space-sm);
+    margin-left    : var(--space-sm);
+    margin-right   : var(--space-sm);
 }

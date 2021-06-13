@@ -12,6 +12,7 @@
 .product-contrainer .container {
     display        : flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .outer-container {
@@ -24,6 +25,7 @@
 .product-counter {
     display       : flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items   : center;
     margin-top    : var(--space-sm);
 }
