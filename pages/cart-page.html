@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/reset.css" />
     <link rel="stylesheet" href="./../css/styles.css" />
+    <script src="./../js/navbar.js"></script>
     <title>Pat's Games</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
                 <a class="button-md button-sign-in" href="#">Sign In</a>
                 <a class="button-md button-register" href="#">Register</a>
             </div>
-            <a href="./cart-page.html" class="nav-shopping-cart-icon">
+            <a href="./cart-page.html" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="32px" class="nav-shopping-cart-icon" viewBox="0 0 24 24"
                     fill="#000000">
                     <path d="M0 0h24v24H0V0z" fill="none" />
@@ -58,7 +59,173 @@
             <h1>Cart</h1>
         </div>
 
+        <div class="cart-content-container">
+
+            <div class="cart-main">
+                <div class="cart-labels">
+                    <p class="product-label">Product</p>
+                    <p class="price-label">Price</p>
+                    <p class="quantity-label" >Quantity</p>
+                    <p class="total-label" >Total</p>
+                </div>
+                <hr>
+                <div class="cart-product">
+                    <div class="cart-product-title-img-container">
+                        <img src="./../images/products/comander_legends_booster_pack.png" class="cart-product-img" />
+                        <p>Commander Legends 20-Card Draft Booster</p>
+                    </div>
+                    <div class="cart-product-price-container">
+                        <table>
+                            <tr>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                        width="36px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                    </svg>
+                                </td>
+                                <td>10.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="cart-product-quantity-container">
+                        <div class="product-counter">
+                            <svg class="counter-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M19 13H5v-2h14v2z" />
+                            </svg>
+                            <p class="count"> 1 </p>
+                            <svg class="counter-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 0 24 24" width="24px" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="cart-product-total-container">
+                        <table>
+                            <tr>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                        width="36px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                    </svg>
+                                </td>
+                                <td>10.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <div class="cart-side-bar">
+                <div class="cart-side-bar-total">
+                    <div class="heading">Cart Total</div>
+                    <div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                        width="36px" fill="#000000">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path
+                                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                                    </svg>
+                                </td>
+                                <td>10.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="cart-side-bar-info">
+                    <div class="heading">Your Data is Secure</div>
+                    <div class="event-disc">All information you enter is encrypted</div>
+                </div>
+                <hr>
+                <div class="cart-side-bar-info">
+                    <div class="heading">Customer Satisfaction</div>
+                    <div class="event-disc">We at Pat's Games live up to our reputation in being the best Magic The Gathering shop for selling, trading and events</div>
+                </div>
+                <hr>
+                <div class="cart-side-bar-info">
+                    <div class="heading">Covid-19 Precaution take into consideration</div>
+                    <div class="event-disc">All staff at Pat's games have undertaken Covid-Safety training and all products are safely handled with</div>
+                </div>
+                <div class="cart-side-bar-check-out">
+                    <a class="button-md add-to-cart" href="./checkout-page.html">Check Out</a>
+                    <a class="link center-link">Continue Shopping</a>
+                </div>
+            </div>
+
+        </div>
+
     </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="about-us">
+                    <div class="footer-header">
+                        <p>About Us</p>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            The store was started in 1993 with 3 binders of Magic Cards and the love of the game. Today
+                            Pat’s
+                            Games is the leading seller of individual Magic Cards in Austin, Texas. We have 98% of all
+                            Magic
+                            Cards in stock. You can place an order in our online store and the cards will be pulled in
+                            minutes. With Covid19, Pat’s has adjusted to meet all your needs while maintaining the
+                            safety of
+                            our community and staff, so we are now offering Direct Shipping to YOU. Come experience the
+                            excitement, knowledge, and fun of Pat’s Games.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="find-us">
+                    <div class="footer-header">
+                        <p>Find Us</p>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            2308 Hancock Dr,
+                        </p>
+                        <p>
+                            Austin, TX 78756,
+                        </p>
+                        <p>
+                            United States
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-us">
+                    <div class="footer-header">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="footer-img">
+                        <div class="social-card">
+                            <img src="./../images/socials/facebook.png" alt="Facebook logo" />
+                        </div>
+                        <div class="social-card">
+                            <img src="./../images/socials/instagram.png" alt="Instagram logo" />
+                        </div>
+                        <div class="social-card">
+                            <img src="./../images/socials/youtube.png" alt="Youtube logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 </html>

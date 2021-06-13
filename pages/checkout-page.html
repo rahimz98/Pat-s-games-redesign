@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/reset.css" />
+    <link rel="stylesheet" href="./../css/styles.css" />
+    <script src="./../js/checkout.js"></script>
+    <title>Pat's Games</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a class="logo" href="/">Pat's Games</a>
+            </div>
+            <div class="nav-buttons">
+                <a class="button-nav-option" href="#">New Additions</a>
+                <a class="button-nav-option" href="#">All Items</a>
+                <a class="button-nav-option" href="#">Booster Packs</a>
+                <a class="button-nav-option" href="#">Events</a>
+                <a class="button-nav-option" href="#">Gallery</a>
+            </div>
+
+            <form>
+                <input class="search-box" id="searchBox" type="text" name="Search Box" style="display:none;" />
+            </form>
+            <a href="#" class="nav-search-icon" cursor="pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24" width="32px" fill="#000000">
+                    <g>
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                        <rect class="search-icon" x="0" y="0" width="32" height="32" onclick="openSearchBar()" />
+                    </g>
+                </svg>
+            </a>
+
+            <div class="profile-buttons">
+                <a class="button-md button-sign-in" href="#">Sign In</a>
+                <a class="button-md button-register" href="#">Register</a>
+            </div>
+            <a href="./cart-page.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32px" class="nav-shopping-cart-icon" viewBox="0 0 24 24"
+                    fill="#000000">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path
+                        d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <div id="alert" class="alert" style="display:none">
+        <p class="heading">Congratulations</p> 
+        <p>Your Payment was Successful</p>
+    </div>
+
+    <main class="checkout-page">
+
+        <div class="forms-container">
+
+            <div class="stepper">
+                <ul class="stepper progress-bar">
+                    <li id="informationLI" class="active">
+                        Information
+                    </li>
+                    <li id="ShippingLI" class="not-active">
+                        Shipping
+                    </li>
+                    <li id="PaymentLI" class="not-active">
+                        Payment
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="contact-container" id="contact-container" style="display:block">
+                <div class="contact-card checkout-card">
+                    <p class="form-heading ">Contact Information</p>
+                    <form>
+                        <label class="text-box-label">First Name</label><br>
+                        <input class="text-box" id="fullName" type="text" name="First Name" /><br>
+
+                        <label class="text-box-label">Last Name*</label><br>
+                        <input class="text-box" id="lastName" type="text" name="Last Name" required/><br>
+
+                        <label class="text-box-label">Email*</label><br>
+                        <input class="text-box" id="email" type="email" name="Email" required/><br>
+
+                        <label class="text-box-label">Phone Number*</label><br>
+                        <input class="text-box" id="phoneNumber" type="tel" name="Phone Number" required/><br>
+                        
+                    </form>
+                </div>
+                <div class="buttons-container">
+                    <a class="link" href="./cart-page.html">Return To Shopping</a>
+                    <a class="button-md form-button-forward" onclick="openShipping()">Shipping Information</a>
+                </div>
+            </div>
+
+            <div class="shipping-container" id="shipping-container" style="display:none">
+                <div class="shipping-card checkout-card not-visible">
+                    <p class="form-heading">Collecting or Shipping</p>
+                    <form>                    
+                        <input class="radial" id="shipping" type="radio" name="Shipping" value="Shipping"/>
+                        <label class="radial-label" for="Shipping">Shipping</label><br>
+                        
+                        <input class="radial" id="Collecting" type="radio" name="Shipping" value="Collecting"/>
+                        <label class="radial-label" for="Collecting">Collecting</label>
+                    </form>
+                </div>
+
+                <div class="shipping-info-card checkout-card">
+                    <p class="form-heading">Shipping Information</p>
+                    <form>
+                        <label class="text-box-label">Street Address*</label><br>
+                        <input class="text-box" id="address" type="text" name="Address" /><br>
+
+                        <label class="text-box-label">Apartment/House/Building Number*</label><br>
+                        <input class="text-box" id="addressNum" type="text" name="Apartment/House/Building Number" required/><br>
+
+                        <label class="text-box-label">State*</label><br>
+                        <input class="text-box" id="state" type="text" name="State" required/><br>
+
+                        <label class="text-box-label">Post Code*</label><br>
+                        <input class="text-box" id="postCode" type="number" name="Post Code" required/><br>
+                    </form>
+                </div>
+                <div class="buttons-container">
+                    <a class="link" onclick="openContact()">Return To Contact Information</a>
+                    <a class="button-md form-button-forward" onclick="openPayment()">Payment Information</a>
+                </div>
+            </div>
+
+            <div class="payment-container" id="payment-container" style="display:none">
+                <div class="payment-type">
+                    <div class="credit-card-option payment-card option-chosen">
+                        <p class="heading">Credit Card</p>
+                    </div>
+                    <a href="https://paypal.com" class="paypal-option payment-card">
+                        <p class="heading">Paypal</p>
+                    </a>
+                </div>
+
+                <div class="payment-info-card checkout-card">
+                    <p class="form-heading">Payment Information</p>
+                    <form>
+                        <label class="text-box-label">Card Number*</label><br>
+                        <input class="text-box" id="cardNumber" type="tel" name="Card Number" required/><br>
+
+                        <label class="text-box-label">Name on Card*</label><br>
+                        <input class="text-box" id="lastName" type="text" name="Name on Card" required/><br>
+
+                        <label class="text-box-label">Expiry Date*</label><br>
+                        <input class="text-box" id="email" type="date" name="Expiry Date" required/><br>
+
+                        <label class="text-box-label">CVV*</label><br>
+                        <input class="text-box" id="phoneNumber" type="number" name="CVV" required/><br>
+                    </form>
+                </div>
+
+                <div class="buttons-container">
+                    <a class="link" onclick="openShipping()">Return To Shipping Information</a>
+                    <a class="button-md form-button-final" onclick="makePayment()">Make Payment</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="checkout-price-container">
+            
+            <div class="checkout-product-container">
+                <div class="checkout-product">
+                    <img class="checkout-product-img" src="./../images/products/comander_legends_booster_pack.png"/> 
+                    <p class="checkout-product-title">Commander Legends 20-Card Draft Booster</p>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                width="36px" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                            </svg>
+                        </td>
+                        <td>10.00</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+            <div class="checkout-prices">
+                <p class="heading">Sub-Total</p>
+                <table>
+                    <tr>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                width="36px" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                            </svg>
+                        </td>
+                        <td>10.00</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="checkout-prices">
+                <p class="heading">Shipping Cost</p>
+                <table>
+                    <tr>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                width="36px" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                            </svg>
+                        </td>
+                        <td id="shippingCost">-</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+
+            <div class="checkout-prices">
+                <p class="heading">Total</p>
+                <table>
+                    <tr>
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 0 24 24"
+                                width="36px" fill="#000000">
+                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                <path
+                                    d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                            </svg>
+                        </td>
+                        <td id="totalCost">-</td>
+                    </tr>
+                </table>
+            </div>            
+
+
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="about-us">
+                    <div class="footer-header">
+                        <p>About Us</p>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            The store was started in 1993 with 3 binders of Magic Cards and the love of the game. Today
+                            Pat’s
+                            Games is the leading seller of individual Magic Cards in Austin, Texas. We have 98% of all
+                            Magic
+                            Cards in stock. You can place an order in our online store and the cards will be pulled in
+                            minutes. With Covid19, Pat’s has adjusted to meet all your needs while maintaining the
+                            safety of
+                            our community and staff, so we are now offering Direct Shipping to YOU. Come experience the
+                            excitement, knowledge, and fun of Pat’s Games.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="find-us">
+                    <div class="footer-header">
+                        <p>Find Us</p>
+                    </div>
+                    <div class="footer-text">
+                        <p>
+                            2308 Hancock Dr,
+                        </p>
+                        <p>
+                            Austin, TX 78756,
+                        </p>
+                        <p>
+                            United States
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-us">
+                    <div class="footer-header">
+                        <p>Contact Us</p>
+                    </div>
+                    <div class="footer-img">
+                        <div class="social-card">
+                            <img src="./../images/socials/facebook.png" alt="Facebook logo" />
+                        </div>
+                        <div class="social-card">
+                            <img src="./../images/socials/instagram.png" alt="Instagram logo" />
+                        </div>
+                        <div class="social-card">
+                            <img src="./../images/socials/youtube.png" alt="Youtube logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

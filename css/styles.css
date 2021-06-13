@@ -3,5 +3,6 @@
 @import "./product-listing/layout.css";
 @import "./product-page/layout.css";
 @import "./cart-page/layout.css";
+@import "./checkout-page/layout.css";
 @import "colour.css";
 @import "components.css";
